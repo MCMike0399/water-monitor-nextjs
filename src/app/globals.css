@@ -1,26 +1,101 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 20px;
+   background-color: #f5f5f5;
+}
+
+h1 {
+   color: #2c3e50;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.status {
+   padding: 8px 15px;
+   border-radius: 4px;
+   display: inline-block;
+   margin-bottom: 15px;
+   font-weight: bold;
+}
+
+.connected {
+   background-color: #dff0d8;
+   color: #3c763d;
+}
+
+.disconnected {
+   background-color: #f2dede;
+   color: #a94442;
+}
+
+.panel {
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.reading-card {
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   text-align: center;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.reading-value {
+   font-size: 48px;
+   font-weight: bold;
+   margin: 20px 0;
+}
+
+.reading-label {
+   color: #7f8c8d;
+   font-size: 18px;
+}
+
+.chart {
+   height: 500px;
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.sensor-status {
+   font-size: 16px;
+   padding: 8px 15px;
+   border-radius: 4px;
+   margin-top: 15px;
+   display: inline-block;
+}
+
+.alert-success {
+   background-color: #d4edda;
+   color: #155724;
+}
+
+.alert-info {
+   background-color: #d1ecf1;
+   color: #0c5460;
+}
+
+.alert-warning {
+   background-color: #fff3cd;
+   color: #856404;
+}
+
+.alert-danger {
+   background-color: #f8d7da;
+   color: #721c24;
 }
